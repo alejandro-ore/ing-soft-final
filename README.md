@@ -1,3 +1,16 @@
+# Implementacion para el examen final
+
+Dentro de `src` se encuentran los archivos trabajados. El código fue trabajado en Windows.
+
+Ejecutar:
+
+```bash
+python3 -m coverage run ./tests_app.py
+python3 -m coverage report
+```
+
+![coverage](coverage.png)
+
 # Task System Application
 
 ## Overview

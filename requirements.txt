@@ -2,3 +2,4 @@ Flask==2.3.3
 Werkzeug==2.3.7
 SQLAlchemy==1.4.22
 pytest==6.2.4
+coverage==7.9.2

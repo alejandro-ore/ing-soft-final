@@ -1,12 +1,14 @@
-class Usuario:
-    def __init__(self, user_id, name, email):
-        self.id = user_id
-        self.name = name
-        self.email = email
+from typing import List
 
-    def get_user_info(self):
+class Usuario:
+    def __init__(self, alias: str, nombre: str):
+        self.alias = alias
+        self.nombre = nombre
+        self.asignaciones: List = []
+    
+    def to_dict(self):
         return {
-            "id": self.id,
-            "name": self.name,
-            "email": self.email
+            "alias": self.alias,
+            "nombre": self.nombre,
+            "asignaciones": [a.to_dict() for a in self.asignaciones]
         }
